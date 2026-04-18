@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h2 {
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #38bdf8;
+}
+
+/* Sections */
+section {
+  padding: 100px 40px;
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #1e3a8a, #0ea5e9);
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #0ea5e9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Projects */
+.project {
+  background: #f1f5f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Fade animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back to top button */
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+}
